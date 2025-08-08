@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Таблица посещений</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .table-wrapper {
+      overflow: auto;
+      width: 100%;
+      height: 90vh;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    iframe {
+      width: 1600px; /* предполагаемая ширина твоей таблицы */
+      height: 800px;
+      border: none;
+      transform: scale(0.75); /* уменьшаем масштаб */
+      transform-origin: 0 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Отчет по посещениям и штрафам</h1>
+  <div class="table-wrapper">
+    <iframe 
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTNg5xxqeFkE5qcz6S0vSALJejfavxO3wXPQilxhOk3vFcRr20x62jquD1O3JQ8g8CnrqTJZG6GldQe/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" 
+      frameborder="0" 
+      scrolling="yes">
+    </iframe>
+  </div>
+</body>
+</html>
